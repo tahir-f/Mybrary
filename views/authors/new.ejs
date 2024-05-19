@@ -2,7 +2,9 @@
 <h2 class="page-header">New Author</h2>
 <form action="/authors" method="POST">
 <!-- not using input tags directly because these inputs will be shared between pages -->
-<%- include('_form_fields', { book: book }) %>
-    <a href="/authors">Cancel</a>
-    <button type="submit">Create</button>
+<%- include('_form_fields', { author: author }) %>
+<div class="form-row btn-row form-row-end" >
+    <a class="btn btn-danger" href="/authors">Cancel</a>
+    <button type="submit" class="btn btn-primary">Create</button>
+</div>
 </form>

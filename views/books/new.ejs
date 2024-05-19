@@ -3,6 +3,8 @@
 <form action="/books" method="POST" >
 <!-- not using input tags directly because these inputs will be shared between pages -->
     <%- include('_form_fields')  %>
-    <a href="/books">Cancel</a>
-    <button type="submit">Create</button>
+<div class="form-row form-row-end btn-row">
+    <a href="/books" class="btn btn-danger">Cancel</a>
+    <button type="submit" class="btn btn-primary">Create</button>
+</div>
 </form>
